@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+
+
+
+    <title>Product details</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <meta name="csrf-token" content="4dNPcYuMqOfqjZWZNGcsIBd8BTEQ2EbI796laRBJ" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="image/" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/new_app3507.css?v=665c96a0cc4dc" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script async defer crossorigin="anonymous" src="../connect.facebook.net/en_US/sdk.js"></script>
+    <script src="../cdn.jsdelivr.net/gh/Joe12387/detectIncognito%40v1.3.0/dist/es5/detectIncognito.min.js"></script>
+
+
+    <script type="text/javascript">
+        if (!NodeList.prototype.forEach) {
+            NodeList.prototype.forEach = Array.prototype.forEach;
+        }
+
+        function accountHover() {
+            document.getElementById("account_ul").style.display = "block";
+        }
+
+        function accountHoverOut() {
+            document.getElementById("account_ul").style.display = "none";
+        }
+
+        function search_toggle() {
+            var search_nav_mobile = document.getElementById("search-home-mobile");
+            if (search_nav_mobile.style.display == "none" || search_nav_mobile.style.display == "") {
+                search_nav_mobile.style.display = "block";
+            } else {
+                search_nav_mobile.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="js/intersection-observer.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/newhome775a.css?v=96532089" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <script type="text/javascript">
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+        // Listen to message from child window
+        eventer(messageEvent, function(e) {
+            if (e.data === "Iframe Login Done") {
+                $('.commonmodal').modal('toggle');
+                window.loggedInSuccess = true;
+            }
+        }, false);
+
+        function inIframe() {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        }
+
+        function hideNavAndFooter() {
+            if (inIframe()) {
+                //console.log(window.location.href);
+                if (window.location.href.includes("/login") || window.location.href.includes("/register")) {
+                    document.querySelector(".navbar").style.display = "none";
+                    document.querySelector(".mobile-nav-sidebar").style.display = "none";
+                    document.querySelector(".footer-container").style.display = "none";
+                    document.querySelector('.fb-customerchat').className = "customerchat-hide";
+                    document.querySelector('.customerchat-hide').style.display = "none";
+                }
+            }
+        }
+
+
+
+        function invokeLogin() {
+
+            document.querySelector('.commonmodal-header').textContent = "Login is required";
+            document.querySelector('.commonmodal-body').style.overflow = "hidden";
+            document.querySelector('.commonmodal-body').innerHTML =
+                '<div style="width: 100%; border: 0px solid; border-radius: 5px; background: #efefef; padding: 15px; text-align: left;">You need to Log in first to create a Wish List and add items to it. This ensures that your list will be saved in your account and will be available when you Log in again.</div><div style="width: 100%; padding: 15px; text-align:center;"><a class="btn btn-primary bulk-landing-start" href="/login">Login Now</a><br/><a href="/register" style="text-decoration:underline; font-size: 0.8rem;">New User? Click here to Register</a></div>';
+            $('.commonmodal').modal('toggle');
+        }
+        window.onload = hideNavAndFooter;
+    </script>
+
+    <!-- nav part start -->
+
+
+
+    <nav class="navbar navbar-light nav-menu-home nav-menu-home-mobile">
+        <div class="no-style-link head-nav-link pull-left" style="margin: 0px 7px 0px 7px;font-size: 20px;border-right: 1px solid #efefef;padding-right: 15px; line-height: 53px;" onclick="toggleMobileSidebar(this);" data-open="true">
+            <!-- <img src="img/menu_icon.png" style="width: 20px;" class="menu-img-ref"> -->
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <a class="no-style-link" href="#">
+            <img src="images/volcano.png" alt="Home Logo" class="nav-logo mobile-logo" style="display: inline; margin-top: -6px;" />
+        </a>
+        <div class="head-nav-link pull-right open-mobile-link" style="margin: -3px 14px 0px 7px;font-size: 17px;" href="gallery.html">
+            <i class="fa fa-chevron-down"></i>
+        </div>
+        <a class="no-style-link head-nav-link pull-right" style="margin: -3px 14px 0px 7px;font-size: 17px;" href="gallery.html">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-primary shopping-cart-badge" style="font-size: .6rem; font-weight: bold; margin-left: 0;">
+                            0
+                    </span>
+        </a>
+
+        <!-- <a class="no-style-link head-nav-link pull-right" style="margin: -2px 14px 0px 7px;font-size: 16px;" href="/favourites">
+        <i class="fa fa-heart-o" style="font-weight: bold"></i>
+    </a> -->
+        <a class="no-style-link head-nav-link pull-right" style="margin: -3px 14px 0px 7px;font-size: 17px;padding-top: 0px;" href="#" onclick="search_toggle()">
+            <i class="fa fa-search"></i>
+        </a>
+        <div id="search-home-mobile" class="search-home-mobile">
+            <form action="#" class="mobile-search-bar" type="GET">
+                <input class="nav-text-input alg-search-box form-control" type="text" name="query" placeholder="Search Products by Titles or Tags" />
+                <button style="display: none" type="submit" class="newhome-search">
+                <i class="fa fa-search"></i>
+            </button>
+            </form>
+        </div>
+    </nav>
+    <aside class="mobile-nav-sidebar">
+        <div class="aside-refinement refinement-area">
+            <div class="aside-refinement-box">
+                <div id="aside-current-refinements-layout"></div>
+                <div id="aside-clear-refinements-layout"></div>
+            </div>
+        </div>
+        <div class="cat-header">
+            Categories
+        </div>
+        <div id="cats-layout">
+            <div class="cats">
+                <div class="cat1_name">
+                    <div class="cat-name">Mens</div>
+                    <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+                <div class="cat1_childs cat_hide">
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="">
+                                <div class="cat-name viewall">Show All</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <div class="cat-name">Half Sleeve T-shirt</div>
+                            <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="">
+                                        <div class="cat-name viewall">Show All</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="">
+                                        <div class="cat-name">Blank</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="">
+                                        <div class="cat-name">Cut and Stitch</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Cut and Stitch (Designer Edition)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Printed</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Raglan</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Raglan (Designer Edition)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Sports</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <div class="cat-name">Full Sleeve T-shirt</div>
+                            <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name viewall">Show All</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Blank</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Cut and Stitch</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="">
+                                        <div class="cat-name">Cut &amp; Stitch (Designer Edition)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Printed</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Raglan</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Raglan (Designer Edition)</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Sports</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Maggie</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <div class="cat-name">Shirt</div>
+                            <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name viewall">Show All</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Casual Shirt</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Formal Shirt</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <div class="cat-name">Polo T-shirt</div>
+                            <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name viewall">Show All</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Classic</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Cut &amp; Stitch</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Printed</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Hoodie</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Jacket</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Joggers</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Sweatshirt</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Comfy Trouser</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Sports Trouser</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <div class="cat-name">Shorts</div>
+                            <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name viewall">Show All</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Chino Shorts</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Gabardine Shorts</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Sports Shorts</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <div class="cat-name">Underwear</div>
+                            <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name viewall">Show All</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Boxer Brief</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Boxer Shorts</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Trunk</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Woven Shorts</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <div class="cat-name">Socks</div>
+                            <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name viewall">Show All</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Classic</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Sports</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Urban</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Panjabi</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Tupi</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Jeans</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Pajama</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <div class="cat-name">Accesorries</div>
+                            <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name viewall">Show All</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Belt</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Wallet</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Chino Pants</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cats">
+                <div class="cat1_name">
+                    <div class="cat-name">Womens</div>
+                    <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+                <div class="cat1_childs cat_hide">
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name viewall">Show All</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">T-Shirt</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Comfy Trouser</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Kurti Tunic And Tops</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Pajamas</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Pants</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cats">
+                <div class="cat1_name">
+                    <div class="cat-name">Kids</div>
+                    <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+                <div class="cat1_childs cat_hide">
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name viewall">Show All</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Polo T-shirt</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <div class="cat-name">Half Sleeve T-shirt</div>
+                            <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name viewall">Show All</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Blank</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cats">
+                                <div class="cat3_name">
+                                    <a href="#">
+                                        <div class="cat-name">Printed</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Maggie</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Full Sleeve T-shirt</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Shorts</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Trouser</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cats">
+                <div class="cat1_name">
+                    <div class="cat-name">Face Mask</div>
+                    <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+                <div class="cat1_childs cat_hide">
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name viewall">Show All</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Professional 7 Layer Mask</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Sports Edition</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Womens Designer Edition</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Womens Embroidery Edition</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Kids Mask</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Professional 7 Layer Mask (Combo)</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cats">
+                <div class="cat1_name">
+                    <div class="cat-name">Sports</div>
+                    <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+                <div class="cat1_childs cat_hide">
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name viewall">Show All</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Sports T-shirt</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Football Jersey</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cats">
+                <div class="cat1_name">
+                    <a href="#">
+                        <div class="cat-name">New Arrival</div>
+                    </a>
+                </div>
+                <div class="cat1_childs cat_hide">
+                </div>
+            </div>
+            <div class="cats">
+                <div class="cat1_name">
+                    <a href="#">
+                        <div class="cat-name">Top Selling</div>
+                    </a>
+                </div>
+                <div class="cat1_childs cat_hide">
+                </div>
+            </div>
+            <div class="cats">
+                <div class="cat1_name">
+                    <div class="cat-name">Merchandise</div>
+                    <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+                <div class="cat1_childs cat_hide">
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name viewall">Show All</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Aurthohin</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Grameenphone</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">ATC</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cats">
+                <div class="cat1_name">
+                    <a href="#">
+                        <div class="cat-name">Free Delivery</div>
+                    </a>
+                </div>
+                <div class="cat1_childs cat_hide">
+                </div>
+            </div>
+            <div class="cats">
+                <div class="cat1_name">
+                    <div class="cat-name">Winter Exclusive</div>
+                    <div class="cat-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+                <div class="cat1_childs cat_hide">
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name viewall">Show All</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Full Sleeve T-shirt</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Hoodie</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Jacket</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat2_name">
+                            <a href="#">
+                                <div class="cat-name">Joggers</div>
+                            </a>
+                        </div>
+                        <div class="cat2_childs cat_hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="mobile-login-opener">
+        <a class="no-style-link head-nav-link mobile-nav-link" href="login.html">
+            <div class="pull-left">
+                <div class="row" style="font-size: 1.0rem; font-weight: bold;">Login</div>
+                <div class="row" style="font-size: .9rem; color: #aaaaaa;">Enter Your Account</div>
+            </div>
+        </a>
+        <a class="no-style-link head-nav-link mobile-nav-link dark" href="track.html">
+            <div class="pull-left">
+                <div class="row" style="font-size: 1.0rem; font-weight: bold;">Track Order</div>
+                <div class="row" style="font-size: .9rem; color: #aaaaaa;">Know Your Order Status</div>
+            </div>
+        </a>
+    </div>
+
+
+    <!-- desktop nav start -->
+    <nav class="navbar navbar-light nav-menu-home nav-menu-desktop">
+        <div style="width: calc(100% + 20px);height: 35px;background: #f3f3f3;line-height: 35px; margin-left: -10px">
+            <div class="col-lg-6">
+                <div style="background: #333333; color: #fff; text-align: left; font-size: .9rem; font-weight: bold; display: table; margin-left: -15px; padding-right: 15px; padding-left: 15px">
+                    <i class="fa-solid fa-bolt-lightning" style="color: orange; padding-right:5px; "></i><a style="color: white;" href="#">EXCLUSIVE T-SHIRTS ON SALE | Limited time only <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div style="background: var(--green); color: #FFFFFF; width:100%; font-size: .8rem; ">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <a style="color: white" href="">Order Bulk</a>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div style="background: #e5e5e5; color: #000; width:100%; font-size: .8rem; cursor:pointer" class="regiontoggle">
+                    <span style="color: #000"> Bangladesh </span> &nbsp;
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-lg-1 text-center small-text" style="padding: 0px"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                <a style="color:#000" href="">Help</a>
+            </div>
+            <div class="col-lg-1 fab-account text-center small-text" style="padding: 0px" onmouseover="accountHover()" onmouseout="accountHoverOut()">
+                <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                <ul id="account_ul" class="account_ul">
+                    <li class="account_li"><a class="account-item" href="login.html">Login</a></li>
+                    <li class="account_li"><a class="account-item" href="register.html">Register</a></li>
+                    <li class="account_li"><a class="account-item" href="track.html">Order Tracking</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="width: 100%; height: 85px; line-height: 85px">
+            <div class="col-lg-2" style="padding: 0px; text-align: center;">
+                <a class="no-style-link" href="index.html">
+                    <img src="images/volcano.png" alt="Home Logo" class="nav-logo" style="width: 180px; height: auto; vertical-align: middle; max-width: 100%;" />
+                </a>
+            </div>
+            <div class="col-lg-2 text-center jas-menu" style="line-height: 85px;">
+                <a class="no-style-link head-nav-link" href="#">
+                    <div class="row shop-margin" style="font-size: 1.1rem; font-weight: bold;">
+                        <h5>Shop <i class="fa-solid fa-caret-down"></i></h5>
+                        <div style="display:inline"></div>
+                    </div>
+
+                </a>
+                <ul class="sub-menu">
+                    <li class="menu-item menu-item-has-children sub-column-item"><a href="#">Mens</a>
+                        <ul class="sub-column">
+                            <li class="menu-item"><a href="#">T-shirt</a></li>
+                            <li class="menu-item"><a href="#">T-shirt (Raglan)</a></li>
+                            <li class="menu-item"><a href="#">T-shirt (Cut and Stitch)</a></li>
+                            <li class="menu-item"><a href="#">T-shirt (Sports Edition)</a></li>
+                            <li class="menu-item"><a href="#">T-shirt (Blanks)</a></li>
+                            <li class="menu-item"><a href="#">Full Sleeve T-shirt</a></li>
+                            <li class="menu-item"><a href="#">Full Sleeve (Raglan)</a></li>
+                            <li class="menu-item"><a href="#">Full Sleeve (Cut and Stitch)</a></li>
+                            <li class="menu-item"><a href="#">Full Sleeve (Blanks)</a></li>
+                            <li class="menu-item"><a href="#">Wallet</a></li>
+                            <li class="menu-item"><a href="#">Belt</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children sub-column-item">
+                        <a href="#">
+                        </a>
+                        <ul class="sub-column">
+                            <li class="menu-item"><a href="#">Panjabi</a></li>
+                            <li class="menu-item"><a href="#">Shirt</a></li>
+                            <li class="menu-item"><a href="#">Polo T-shirt</a></li>
+                            <li class="menu-item"><a href="#">Hoodie</a></li>
+                            <li class="menu-item"><a href="#">Jacket</a></li>
+                            <li class="menu-item"><a href="#">Denim Jeans</a></li>
+                            <li class="menu-item"><a href="#">Comfy Trouser</a></li>
+                            <li class="menu-item"><a href="#">Sports Trouser</a></li>
+                            <li class="menu-item"><a href="#">Joggers</a></li>
+                            <li class="menu-item"><a href="#">Shorts</a></li>
+                            <li class="menu-item"><a href="#">Underwear</a></li>
+                            <li class="menu-item"><a href="#">Socks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children sub-column-item"><a href="#">Womens</a>
+                        <ul class="sub-column">
+                            <li class="menu-item"><a href="#">Kurti, Tunic and Tops</a></li>
+                            <li class="menu-item"><a href="#">T-Shirt</a></li>
+                            <li class="menu-item"><a href="#">Comfy Trouser</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children sub-column-item"><a href="">Kids</a>
+                        <ul class="sub-column">
+                            <li class="menu-item"><a href="#">T-shirt</a></li>
+                            <li class="menu-item"><a href="#">Maggie</a></li>
+                            <li class="menu-item"><a href="#">Plain T-shirt</a></li>
+                            <li class="menu-item"><a href="#">Full Sleeve T-shirt</a></li>
+                            <li class="menu-item"><a href="#">Polo T-shirt</a></li>
+                            <li class="menu-item"><a href="#">Shorts</a></li>
+                            <li class="menu-item"><a href="#">Trouser</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children sub-column-item"><a href="#">Face Mask</a>
+                        <ul class="sub-column">
+                            <li class="menu-item"><a href="#">Professional 7 Layer Mask</a></li>
+                            <li class="menu-item"><a href="#">Sports Edition</a></li>
+                            <li class="menu-item"><a href="#">Womens Designer Edition</a></li>
+                            <li class="menu-item"><a href="#">Womens Embroidery Edition</a></li>
+                            <li class="menu-item"><a href="#">Kids Face Mask</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children sub-column-item"><a href="#">Sports</a>
+                        <ul class="sub-column">
+                            <li class="menu-item"><a href="#">Football Jersey</a></li>
+                            <li class="menu-item"><a href="#">Sports T-shirt</a></li>
+                            <li class="menu-item"><a href="#">Maggie (Single Jersey)</a></li>
+                            <li class="menu-item"><a href="#">Shorts</a></li>
+                            <li class="menu-item"><a href="#">Underware</a></li>
+                            <li class="menu-item"><a href="#">Socks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <form action="#" class="nav-search-bar" type="GET">
+                    <input class="nav-text-input alg-search-box form-control" type="text" name="query" placeholder="Search Products by Titles or Tags" />
+                    <button type="submit" class="newhome-search">
+                <i class="fa fa-search"></i>
+            </button>
+                </form>
+            </div>
+            <div class="col-lg-2 text-right" style="font-size: 1.5rem; padding: 0px;">
+                <!-- <div class="col-lg-6">
+                <a class="no-style-link head-nav-link" href="/favourites">
+                <i class="fa fa-heart-o"></i>
+                </a>
+            </div> -->
+                <div class="col-lg-6" style="position: relative">
+                    <a class="no-style-link head-nav-link" style="position: absolute; top: 0; right: 0;" href="#">
+
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="badge badge-primary shopping-cart-badge" style="font-size: .6rem; font-weight: bold; margin-left: 0;">
+                                     0
+                                 </span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="app-promo-modal" tabindex="-1" role="dialog" aria-labelledby="app-promo-modal-label" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="min-width: 40vw;">
+            <div class="modal-content" style="background: rgba(0,0,0,0); border: none;">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    <a class="no-style-link" href="shop.html" target="_blank">
+                        <!-- <img src="/image-gallery/63f51c60dcc07_app5p.jpg" width="100%" alt="App Promo Image" /> -->
+                        <img src="image-gallery/66544c4a7327d-square.jpg" width="100%" alt="App Promo Image" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- nav part end -->
+
+    <!-- product details part start -->
+    <section id="quicktech-product">
+        <div class="container">
+            <div class="row pposition">
+                <div class="col-lg-5">
+                    <div class="quicktech-pimg">
+                        <img src="images/t2.jpg" alt="">
+                    </div>
+                    <div class="quicktech-salee">
+                        <p>Sale</p>
+                    </div>
+                    <div class="f-mainn">
+                        <div class="quicktech-frequent">
+                            <h5>Frequently Brought Together</h5>
+                        </div>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="quickteck-fimg">
+                                        <img src="images/productt.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="quickch-ftext">
+                                        <h6>Mens Premium T-Shirt - Traveler</h6>
+                                        <p>$599.0 <s>$689.00</s></p>
+                                    </div>
+                                    <div class="quicktech-fbtnadd">
+                                        <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form action="#">
+                        <div class="quicktech-ptext">
+                            <h6>Mens Premium T-Shirt - Traveler</h6>
+                            <p>$599.0 <s>$689.00</s></p>
+                        </div>
+                        <div class="quicktech-select">
+                            <strong style="width: 80px; line-height: 36px;font-family: 'Rajdhani', sans-serif;">Select Size: </strong>
+                            <select name="Size" id="size">
+                                          <option value="S">S</option>
+                                          <option value="L">L</option>
+                                          <option value="XL">XL</option>
+                                          <option value="XLL">XLL</option>
+                                          <option value="XS">XS</option>
+                                        
+                                        </select>
+
+
+                        </div>
+                        <div class="quicktech-count-main">
+                            <div class="takk2">
+                                <p class="minus">-</p>
+                                <p class="countt">1</p>
+                                <p class="plus">+</p>
+                            </div>
+                            <div class="quicktech-fbtnaddd">
+                                <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="quicktech-prdetails mt-2">
+                        <p>Fabrilife Mens Premium Shorts Sleeve Raglan Quality t-shirt that offers a much smoother, silky feel and more structured, mid-weight fit than the regular t-shirts. The t-shirts are made with the finest quality. <br> Combed Compact
+                            Cotton, features astonishing ~175 GSM on just 26's cotton which gives a smooth and compact construction. The compact finish guarantees that the t-shirt length and width will not change over wash or months of usage.</p>
+                        <p>The compact finish guarantees that the t-shirt length and width will not change over wash or months of usage.</p>
+                    </div>
+                    <div class="quicktech-specification">
+                        <h4>Detailed Specification:</h4>
+                        <ul>
+                            <li>Organic Ringspun Combed Compact Cotton</li>
+                            <li>100% Cotton</li>
+                            <li>Regular fit, Crew Neck Mid-weight, 5.16 oz/yd2(~175GSM)</li>
+                            <li>Reactive Dye, enzyme and silicon washed</li>
+                            <li>Preshurnk to minimize shrinkage</li>
+                        </ul>
+                    </div>
+                    <div class="quicktech-productchart mt-1">
+                        <h4>Size chart - In inches (Expected Deviation 3%)
+                        </h4>
+                        <table class="table table-striped mb-0 mt-2">
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">S</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">M</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">L</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">XL</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2XL</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="quicktech-share text-center mt-2">
+                        <p>share</p>
+                        <ul class="dis-f">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- you may also like part start -->
+    <section id="quicktech-maylike">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="quicktech-lhead">
+                        <h3>You may also like</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb5">
+                <div class="col-lg-2 col-6 ">
+                    <form action="#">
+                        <div class="quicktech-likeimg like-pos">
+                            <img src="images/like1.jpg" alt="">
+                        </div>
+                        <div class="quicktech-likeprice">
+                            <p>$599 <s>$699</s></p>
+                        </div>
+                        <div class="quicktech-fbtnadddd">
+                            <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-6 ">
+                    <form action="#">
+                        <div class="quicktech-likeimg like-pos">
+                            <img src="images/like1.jpg" alt="">
+                        </div>
+                        <div class="quicktech-likeprice">
+                            <p>$599 <s>$699</s></p>
+                        </div>
+                        <div class="quicktech-fbtnadddd">
+                            <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-6 ">
+                    <form action="#">
+                        <div class="quicktech-likeimg like-pos">
+                            <img src="images/like1.jpg" alt="">
+                        </div>
+                        <div class="quicktech-likeprice">
+                            <p>$599 <s>$699</s></p>
+                        </div>
+                        <div class="quicktech-fbtnadddd">
+                            <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-6 ">
+                    <form action="#">
+                        <div class="quicktech-likeimg like-pos">
+                            <img src="images/like1.jpg" alt="">
+                        </div>
+                        <div class="quicktech-likeprice">
+                            <p>$599 <s>$699</s></p>
+                        </div>
+                        <div class="quicktech-fbtnadddd">
+                            <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-6 ">
+                    <form action="#">
+                        <div class="quicktech-likeimg like-pos">
+                            <img src="images/like1.jpg" alt="">
+                        </div>
+                        <div class="quicktech-likeprice">
+                            <p>$599 </p>
+                        </div>
+                        <div class="quicktech-fbtnadddd">
+                            <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- you may also like part end -->
+
+    <!-- people part start -->
+    <section id="quicktech-people">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="quicktech-lhead">
+                        <h3>People also purchased</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-2 col-6 ">
+                    <form action="#">
+                        <div class="quicktech-likeimg like-pos">
+                            <img src="images/like1.jpg" alt="">
+                        </div>
+                        <div class="quicktech-likeprice">
+                            <p>$599 <s>$699</s></p>
+                        </div>
+                        <div class="quicktech-fbtnadddd">
+                            <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-6 ">
+                    <form action="#">
+                        <div class="quicktech-likeimg like-pos">
+                            <img src="images/like2.jpg" alt="">
+                        </div>
+                        <div class="quicktech-likeprice">
+                            <p>$599 <s>$699</s></p>
+                        </div>
+                        <div class="quicktech-fbtnadddd">
+                            <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-6 ">
+                    <form action="#">
+                        <div class="quicktech-likeimg like-pos">
+                            <img src="images/like3.jpg" alt="">
+                        </div>
+                        <div class="quicktech-likeprice">
+                            <p>$599 <s>$699</s></p>
+                        </div>
+                        <div class="quicktech-fbtnadddd">
+                            <button><i class="fa-solid fa-plus"></i> Add To Cart</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- people part end -->
+
+    <!-- prodeuct details part end -->
+
+
+
+
+
+    <!-- payment part start -->
+
+    <section id="payment">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="pay text-center">
+                        <i class="fa-solid fa-lock"></i>
+                        <h3>All secure payment methods</h3>
+                        <img src="images/paymeny.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pay text-center">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <h3>Satisfaction guaranteed</h3>
+                        <p>Made with premium quality materials. <br>
+                            <span>Cozy yet lasts the test of time</span></p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pay text-center">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h3>Worldwide delivery</h3>
+                        <img src="images/fed.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- payement part end -->
+
+    <!-- subscribe part start -->
+    <section id="subscribe">
+        <div class="container">
+            <div class="row sub-gap">
+                <div class="col-lg-6">
+                    <div class="subs">
+                        <h3><i class="fa-regular fa-envelope"></i> GET SPECIAL DISCOUNTS IN YOUR INBOX</h3>
+                        <br>
+                        <div class="btn-sub">
+                            <form action="#">
+                                <input type="text" placeholder="Enter mail to get Offers, Discount and more.">
+                                <button>Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="subs">
+                        <h3><i class="fa-solid fa-phone"></i> FOR ANY HELP YOU MAY CALL US AT</h3>
+                        <p>+8809677666888 <br> Open 24 Hours a Day, 7 Days a week</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe part end -->
+
+    <!-- footer part start -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f-one">
+                        <h5>FABRILIFE</h5>
+                        <br>
+                        <p><a href="#">ABOUT US</a></p>
+                        <p> <a href="#">TERMS AND CONDITIONS</a></p>
+                        <p><a href="#">PRIVACY POLICY</a></p>
+                        <p> <a href="#">CANCELLATION AND RETURN POLICY</a></p>
+                        <p><a href="#">FAQS</a></p>
+                        <p> <a href="#">CONTACT US</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f-one">
+                        <h4>MEN</h4>
+                        <br>
+                        <p>
+                            <a href="#">SHORT SLEEVE</a>
+                        </p>
+                        <p> <a href="#">LONG SLEEVE</a></p>
+                        <p><a href="#">POLO</a></p>
+                        <p> <a href="#">SHIRT</a></p>
+                        <p><a href="#">HOODIE</a></p>
+                        <p> <a href="#">SPORTS TROUSER</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f-one">
+                        <h4>WOMEN</h4>
+                        <br>
+                        <p>
+                            <a href="#">SHORT SLEEVE</a>
+                        </p>
+                        <p> <a href="#">LONG SLEEVE</a></p>
+                        <p><a href="#">FACE MASK</a></p>
+                        <p> <a href="#">JERSEY</a></p>
+                        <p><a href="#">KIDS MASK</a></p>
+                        <p> <a href="#">CLASSIC</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f-one">
+                        <h4>KIDS</h4>
+                        <br>
+                        <p>
+                            <a href="#">MAGGIE</a>
+                        </p>
+                        <p> <a href="#">LONG SLEEVE</a></p>
+                        <p><a href="#">SHORTS</a></p>
+                        <p> <a href="#">JERSEY</a></p>
+                        <p><a href="#">KIDS MASK</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end -->
+
+    <!-- COPY RIGHT -->
+    <section id="copy right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="fabb-text text-center mt-4">
+                        <p>FABRILIFE prints a huge variety of custom clothing like T-shirts, hoodies and more. Your order is handled daily with a lot of ❤️️ from BANGLADESH and delivered worldwide!</p>
+
+                        <span>Copyright © 2018 Fabrilife Limited. All Right Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COPY RIGHT -->
+
+
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        $(document).on("click", ".cat1_name", function() {
+            children = $(this).parent().find(".cat1_childs");
+            if ($(children).hasClass("cat_hide")) {
+                $(children).removeClass("cat_hide");
+                $(children).find(".cat2_childs").each(function(index, elem) {
+                    $(elem).addClass("cat_hide");
+                });
+                $(this).find('.cat-plus').html('<i class="fa fa-minus" aria-hidden="true"></i>');
+                $(".cat1_name .cat-name").addClass("cat1_bold");
+            } else {
+                $(children).addClass("cat_hide");
+                $(children).find(".cat2_childs").each(function(index, elem) {
+                    $(elem).addClass("cat_hide");
+                });
+                $(this).parent().find('.cat-plus').each(function(index, elem) {
+                    $(elem).html('<i class="fa fa-plus" aria-hidden="true"></i>');
+                });
+                if ($(".cats .cat1_childs:not(.cat_hide)").length == 0) $(".cat1_name .cat-name").removeClass("cat1_bold");
+            }
+        });
+
+        $(document).on("click", ".cat2_name", function() {
+            children = $(this).parent().find(".cat2_childs");
+            if ($(children).hasClass("cat_hide")) {
+                $(children).removeClass("cat_hide");
+                $(children).find(".cat3_childs").each(function(index, elem) {
+                    $(elem).addClass("cat_hide");
+                });
+                $(this).find('.cat-plus').html('<i class="fa fa-minus" aria-hidden="true"></i>');
+            } else {
+                $(children).addClass("cat_hide");
+                $(children).find(".cat3_childs").each(function(index, elem) {
+                    $(elem).addClass("cat_hide");
+                });
+                $(this).parent().find('.cat-plus').each(function(index, elem) {
+                    $(elem).html('<i class="fa fa-plus" aria-hidden="true"></i>');
+                });
+            }
+        });
+
+        $(document).on("click", ".open-mobile-link", function() {
+            $(".mobile-login-opener").toggleClass("mobile-login-toggle");
+            $(".open-mobile-link").find("i.fa-chevron-down").toggleClass("list-hidden");
+            $(".open-mobile-link").find("i.fa-chevron-up").toggleClass("list-hidden");
+        });
+    </script>
+
+    <script>
+        document.querySelector(".mail-subscribe-btn").addEventListener('click', function() {
+            $.ajax({
+                url: '/subscribe-to-mailinglist',
+                type: 'POST',
+                data: {
+                    _token: `4dNPcYuMqOfqjZWZNGcsIBd8BTEQ2EbI796laRBJ`,
+                    email: document.querySelector('.email-submit-input').value
+                },
+                dataType: 'JSON',
+                success: function(data) {
+                    swal(
+                        'Success',
+                        data.success,
+                        'success'
+                    )
+                },
+                error: function(data) {
+                    swal(
+                        'Oops...',
+                        data.responseJSON.err,
+                        'error'
+                    )
+                }
+            });
+        });
+
+        var mobileMenuVisible = false;
+
+        function toggleMobileSidebar(elem) {
+            if (!mobileMenuVisible) {
+                mobileMenuVisible = true;
+                document.querySelector('.mobile-nav-sidebar').style.transform = "translateX(100%)";
+                document.querySelector('.menu-img-ref').src = "img/cross_icon.png";
+            } else {
+                mobileMenuVisible = false;
+                document.querySelector('.mobile-nav-sidebar').style.transform = "translateX(0%)";
+                document.querySelector('.menu-img-ref').src = "img/menu_icon.png";
+            }
+        }
+
+        if (localStorage.getItem('IfThisIsApp')) {
+            document.querySelector('.this-is-app-exit').style.display = "block";
+        } else {
+
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var lastScrollTop = 0;
+            $(window).on('scroll', function() {
+                st = $(this).scrollTop();
+                //console.log(st);
+                //console.log('scroll event fired...');
+
+
+                //            if(st < lastScrollTop) {
+                //                if(window.innerWidth > 997) {
+                //                document.querySelectorAll('.nav-menu-home')[1].style.transform = "translateY(0px)";
+                //                }
+                //            }
+                //            else {
+                //                if(window.innerWidth > 997) {
+                //                document.querySelectorAll('.nav-menu-home')[1].style.transform = "translateY(-120px)";
+                //                }
+                //            }
+                //            lastScrollTop = st;
+
+                if (st > 0) {
+                    if (window.innerWidth > 997) {
+                        document.querySelector('.nav-menu-desktop').style.transform = "translateY(-120px)";
+                        document.querySelector('.nav-menu-home-mobile').style.display = "block";
+                        document.querySelector('body').style.marginTop = "60px";
+                    }
+                } else {
+                    if (window.innerWidth > 997) {
+                        document.querySelector('.nav-menu-desktop').style.transform = "translateY(0px)";
+                        document.querySelector('body').style.marginTop = "120px";
+                        mobileMenuVisible = false;
+                        document.querySelector('.mobile-nav-sidebar').style.transform = "translateX(0%)";
+                        document.querySelector('.menu-img-ref').src = "img/menu_icon.png";
+                    }
+                }
+
+
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript" src="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        function goToPage(page) {
+            window.location.href = "/" + page
+        }
+        //carosal
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/newhome.html"></script>
+
+    <script src="../cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script src="../cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+
+    <script>
+        let plus = document.querySelector(".plus");
+        let minus = document.querySelector(".minus");
+        let countt = document.querySelector(".countt");
+        let num = 1;
+
+        plus.addEventListener("click", () => {
+            countt.innerHTML = ++num;
+        });
+        minus.addEventListener("click", () => {
+            if (num > 1) {
+                countt.innerHTML = --num;
+            }
+        });
+    </script>
+
+</body>
+
+
+</html>

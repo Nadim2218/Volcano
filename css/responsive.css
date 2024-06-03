@@ -1,0 +1,361 @@
+@media (max-width: 575.98px) {
+    /* nav */
+    body {
+        overflow-x: hidden;
+    }
+    .nav-logo {
+        height: 52px;
+        width: auto;
+        display: inline;
+        margin-top: 5px;
+    }
+    .banner-img {
+        display: none;
+    }
+    .banner-imgg {
+        display: block;
+        width: 100%;
+    }
+    .banner-imgg img {
+        width: 100%;
+    }
+    /* category */
+    .categori a img {
+        width: 60px;
+    }
+    .category-main a {
+        font-size: 11px;
+        padding-right: 6px;
+        padding-top: 10px;
+    }
+    .cat-gap {
+        row-gap: 12px;
+    }
+    .tsp-img img {
+        width: 91%;
+        height: 100%;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .mobile-search-bar {
+        width: 95%;
+        position: relative;
+        padding-bottom: 4px;
+    }
+    .jacketpp-img img {
+        width: 91%;
+        height: 100%;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .sporttshirt-img img {
+        width: 91%;
+        height: 100%;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .masks-img img {
+        width: 91%;
+        height: 100%;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .socks-img img {
+        width: 91%;
+        height: 100%;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    /* category */
+    /* event */
+    .event-text a {
+        font-size: 14px;
+    }
+    .event-text span {
+        font-size: 14px;
+    }
+    /* event */
+    /* fabrilife */
+    .fabr-text h1 {
+        font-size: 33px;
+    }
+    .fabr-text h3 {
+        font-size: 22px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+    }
+    .sock-head a p {
+        font-size: 13px;
+    }
+    .sock-head a h3 {
+        font-size: 20px;
+    }
+    .bulk-text a h2 {
+        font-size: 25px;
+    }
+    .bulk-text a p {
+        font-size: 15px;
+    }
+    .work-text h2 {
+        font-size: 25px;
+    }
+    .work-text h4 img {
+        width: 30%;
+    }
+    .next {
+        top: 163px;
+        right: 26px;
+        z-index: 1111;
+    }
+    .prev {
+        position: absolute;
+        top: 165px;
+        left: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.4s;
+        z-index: 111;
+    }
+    .join-text {
+        position: absolute;
+        content: '';
+        top: 41px;
+        right: 70px;
+        text-align: center;
+    }
+    .join-text h1 {
+        font-size: 35px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: black;
+    }
+    .pay h3 {
+        font-size: 20px;
+    }
+    .pay i {
+        font-size: 20px;
+    }
+    .btn-sub input {
+        width: 300px;
+    }
+    .subs h3 {
+        font-size: 16px;
+    }
+    .sub-gap {
+        row-gap: 12px;
+    }
+    .f-one h5 {
+        font-size: 18px;
+    }
+    .f-one p a {
+        font-size: 13px;
+    }
+    .f-one h4 {
+        font-size: 18px;
+    }
+    .fabb-text p {
+        font-size: 13px;
+    }
+    /* bulk page */
+    .argin {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .namee {
+        padding-left: 10px;
+    }
+    .quicktech-bulkform input {
+        width: 90%;
+    }
+    /* bulk page */
+    /* all category page */
+    .sidebar {
+        display: none;
+    }
+    .quicktech-free p {
+        background-color: black;
+        padding: 1px 4px;
+        color: white;
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .quicktech-sell p {
+        background-color: red;
+        padding: 1px 21px;
+        font-size: 13px;
+    }
+    .quicktech-cattext h4 {
+        font-size: 13px;
+        padding: 9px;
+        padding-top: 0px;
+    }
+    .quicktech-cattext a {
+        background-color: black;
+        color: white;
+        cursor: text;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .mobile-nav-sidebar {
+        overflow-y: scroll;
+        height: calc(100vh - 60px);
+        padding-bottom: 100px;
+        z-index: 999999;
+    }
+    .mobile-login-opener {
+        width: 60vw;
+        z-index: 999999;
+    }
+    .inn {
+        width: 95% !important;
+    }
+    .padd {
+        padding-left: 20px;
+    }
+    .padd input {
+        width: 90%;
+    }
+    .quicktech-form {
+        padding-left: 20px;
+    }
+    .quicktech-form input {
+        width: 90%;
+    }
+    .send-otp {
+        width: 96%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .quicktech-loginfb {
+        background-color: #3b5998;
+        color: white;
+        width: 96%;
+    }
+    .quicktech-prdetails p {
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 380px;
+    }
+    .f-mainn {
+        display: none;
+    }
+    /* .quicktech-pimg {
+        margin-left: 20px;
+    } */
+    .pposition {
+        padding-left: 20px;
+    }
+    /* all category page */
+}
+
+@media (min-width: 576px) and (max-width: 766.98px) {
+    .nav-logo {
+        height: 53px;
+        width: auto;
+        display: inline;
+    }
+    .alg-search-box {
+        width: 97% !important;
+        font-size: 0.9rem;
+        border-radius: 0px !important;
+        position: relative;
+        vertical-align: middle !important;
+        display: inline;
+    }
+    /* bulk page */
+    .namee {
+        padding-left: 10px;
+    }
+    .quicktech-bulkform input {
+        width: 90%;
+    }
+    /* bulk page */
+    /* all category page */
+    .sidebar {
+        display: none;
+    }
+    .quicktech-free p {
+        background-color: black;
+        padding: 1px 4px;
+        color: white;
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .quicktech-sell p {
+        background-color: red;
+        padding: 1px 21px;
+        font-size: 13px;
+    }
+    .quicktech-cattext h4 {
+        font-size: 14px;
+        padding: 10px;
+        padding-top: 30px;
+    }
+    .quicktech-cattext a {
+        background-color: black;
+        color: white;
+        cursor: text;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .mobile-nav-sidebar {
+        overflow-y: scroll;
+        height: calc(100vh - 60px);
+        padding-bottom: 100px;
+        z-index: 999999;
+    }
+    .mobile-login-opener {
+        width: 60vw;
+        z-index: 999999;
+    }
+    .f-mainn {
+        display: none;
+    }
+    /* all category page */
+}
+
+@media (min-width: 767px) and (max-width: 991.98px) {
+    .nav-logo {
+        height: 54px;
+        width: auto;
+        display: inline;
+    }
+    .alg-search-box {
+        width: 97% !important;
+        font-size: 0.9rem;
+        border-radius: 0px !important;
+        position: relative;
+        vertical-align: middle !important;
+        display: inline;
+    }
+    .f-mainn {
+        display: none;
+    }
+    /* bulk page */
+    .namee {
+        padding-left: 10px;
+    }
+    .quicktech-bulkform input {
+        width: 90%;
+    }
+    .quicktech-cattext h4 {
+        font-size: 16px;
+        padding: 10px;
+        padding-top: 93px;
+    }
+    /* bulk page */
+}

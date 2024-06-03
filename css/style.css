@@ -1,0 +1,2327 @@
+/* common css start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.nav-logo {
+    height: 60px;
+    width: auto;
+    display: inline;
+}
+
+
+/* common css end */
+
+.newhome-search {
+    background: none;
+    cursor: pointer;
+    margin-left: -25px;
+    line-height: .9rem;
+    padding: 0px;
+    border: none;
+    z-index: 100;
+    position: absolute;
+    top: 37px;
+    right: 5px;
+}
+
+.mobile-login-toggle {
+    height: auto !important;
+    max-height: 1000px !important;
+    transition: all 0.25s ease-in !important;
+    opacity: 1 !important;
+}
+
+.mobile-nav-link {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.mobile-login-opener {
+    top: 0;
+    right: 0;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.15s ease-out;
+    overflow: hidden;
+    position: fixed;
+    top: 60px;
+    background: #333;
+    color: #FFF;
+    z-index: 9999;
+    width: 300px;
+}
+
+.list-hidden {
+    display: none;
+}
+
+.cats {
+    margin-left: 13px;
+}
+
+.cats a {
+    text-decoration: none;
+}
+
+.viewall {
+    font-style: italic;
+}
+
+.cat1_bold {
+    font-weight: bold;
+}
+
+.cat3_name .cat-name {
+    color: #888;
+}
+
+.cat1_childs,
+.cat2_childs {
+    /* max-height: 1000px; */
+    transition: all 0.25s ease-in;
+    opacity: 1;
+}
+
+.cat_hide {
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.15s ease-out;
+    overflow: hidden;
+}
+
+.cat1_name,
+.cat2_name,
+.cat3_name {
+    display: flex;
+    padding: 8px 0px;
+}
+
+.cat-name {
+    width: 100%;
+    font-size: 15px;
+    color: #000;
+    line-height: 15px;
+}
+
+.cat-plus {
+    padding: 0px 14px 0px 0px;
+    line-height: .7rem;
+}
+
+.cat-header {
+    padding-left: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 1.1rem;
+}
+
+.jas-menu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.campaign {
+    color: black;
+}
+
+.sub-menu {
+    position: absolute!important;
+    min-width: 100%!important;
+    left: 0!important;
+    right: 0!important;
+    margin-top: 0;
+    transition: none;
+    display: table;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    z-index: 10;
+    padding: 0;
+    box-shadow: 3px 3px 6px 0 rgb(0 0 0 / 10%);
+    white-space: nowrap;
+    background: #fff!important;
+    height: 100%!important;
+    width: calc(50vw);
+    top: 85px;
+}
+
+.jas-menu>li:not(:last-child) {
+    border-bottom: 0 solid;
+}
+
+.sub-menu>li:nth-child(2n) {
+    background: #f7f7f7;
+    height: 100%;
+}
+
+.sub-menu li a {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+    text-decoration: none;
+}
+
+.sub-menu>li>a {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+}
+
+.jas-menu>li>ul>.sub-column-item {
+    display: table-cell;
+}
+
+.jas-menu ul li {
+    line-height: 16px;
+    padding: 10px 15px;
+}
+
+.sub-menu>li {
+    display: table-cell;
+    padding-left: 10px;
+    min-width: 120px;
+}
+
+.sub-menu li {
+    padding-top: 4px!important;
+    padding-bottom: 4px!important;
+    list-style: none;
+}
+
+.jas-menu li {
+    font-size: 14px;
+    list-style: none;
+    position: relative;
+}
+
+.jas-menu .sub-column-item>a {
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 6px 0;
+}
+
+.sub-column-item .sub-column {
+    padding: 0;
+    left: 250px;
+    top: 20%;
+    padding-bottom: 15px;
+}
+
+.jas-menu ul li:not(:last-child) {
+    border-bottom: 0 solid;
+}
+
+.sub-column-item .sub-column>li {
+    padding: 6px 0;
+}
+
+.sub-menu li {
+    padding-top: 4px!important;
+    padding-bottom: 4px!important;
+}
+
+.account_ul {
+    text-align: left;
+    background: #484848;
+    list-style: none;
+    position: absolute;
+    z-index: 9;
+    width: 150px;
+    right: 23px;
+    transition: .3s ease-in;
+    display: none;
+    padding-left: 15px;
+    z-index: 999;
+}
+
+.account_ul>li:not(:last-child) {
+    border-bottom: 1px solid #76daff;
+}
+
+.account-item {
+    color: #FFF;
+}
+
+.account-item:hover {
+    color: #FFF;
+}
+
+.fab-account {
+    cursor: pointer;
+}
+
+.mobile-nav-sidebar {
+    overflow-y: scroll;
+    height: calc(100vh - 60px);
+    padding-bottom: 100px;
+}
+
+.mobile-nav-sidebar>.dark {
+    background: #666;
+    color: #f1f1f1;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.mobile-nav-sidebar>.dark:after {
+    line-height: 25px;
+}
+
+.nav-sidebar-logged-in {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #666;
+    color: #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+    /* position: absolute; */
+    top: 140px;
+    bottom: 0px;
+}
+
+.nav-dash-item::after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f054";
+    float: right;
+    vertical-align: middle;
+    line-height: 35px;
+    margin-right: 12px;
+    font-weight: lighter;
+    font-size: small;
+    color: #b5b5b5;
+}
+
+.nav-dash-item {
+    color: #FFF;
+    line-height: 35px;
+    padding-left: 10%;
+}
+
+.nav-dash-item>a {
+    color: #E8E8E8;
+    font-size: .9em;
+}
+
+.nav-dash-item i {
+    margin-right: 5px;
+    padding: 6px;
+    font-size: .8em;
+    border-radius: 1em;
+    background: #4d4d4d;
+    border-top: 1px solid #000;
+    border-left: 1px solid #222;
+    width: 24px;
+    height: 24px;
+}
+
+.nav-seller {
+    padding-bottom: 40px;
+}
+
+.mobile-nav-sidebar span {
+    background: #666;
+    color: #c8c8c8;
+}
+
+.search-home-mobile {
+    background: #ddd;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    margin: 0 -10px !important;
+    display: none;
+    line-height: unset !important;
+    white-space: nowrap;
+}
+
+.mobile-search-bar {
+    width: 100%;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.mobile-search-bar span {
+    top: 95% !important;
+    margin: 0 auto;
+    padding: 0px 10px;
+    width: 100%;
+    font-size: .9em;
+}
+
+.mobile-search-bar input {
+    border-radius: 5px !important;
+    border: 0px !important;
+}
+
+.nav-menu-desktop {
+    position: absolute;
+    width: 100%;
+}
+
+.nav-menu-home-mobile {
+    position: fixed;
+    width: 100%;
+}
+
+body {
+    margin-top: 120px;
+}
+
+.sub-menu li a:hover {
+    color: #04aeef;
+}
+
+#app-promo-modal .close {
+    opacity: 1;
+    position: absolute;
+    right: 21px;
+    top: 10px;
+}
+
+#app-promo-modal .close span {
+    color: #282828;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+@media(max-width: 996px) {
+    #app-promo-modal .modal-dialog {
+        margin-top: 100px;
+    }
+    #app-promo-modal .close span {
+        font-size: 30px;
+    }
+    #app-promo-modal .close {
+        right: 18px;
+    }
+}
+
+@media(max-width: 700px) {
+    .mobile-login-opener {
+        width: 60vw;
+    }
+}
+
+.fb-share-button>span {
+    height: 24px !important;
+}
+
+
+/* .shop-margin {
+    margin-left: 30px;
+} */
+
+.shop-margin h5 {
+    margin-top: 35px;
+    height: 100px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+}
+
+
+/* banner part start */
+
+.banner-imgg {
+    display: none;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* banner end */
+
+
+/* catergory part start */
+
+#categories {
+    width: 100%;
+    padding: 10px 70px;
+    background-color: #ebebeb;
+    margin-top: 10px;
+}
+
+.category-main {
+    /* padding: 20px 20px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-main a {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #333333;
+    padding-top: 5px;
+}
+
+.categori {
+    display: flex;
+    width: 100%;
+}
+
+.categori span {
+    padding-top: 5px;
+}
+
+.categori a img {
+    width: 100px;
+}
+
+
+/* category part end */
+
+
+/* event part start */
+
+#event {
+    padding: 10px 0;
+}
+
+.event-text {
+    padding: 10px 10px;
+    background-color: #E0F7FA;
+    text-align: center;
+}
+
+.event-text a {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.event-text span {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+}
+
+
+/* event part end */
+
+
+/* new arrival part start */
+
+.new-head {
+    padding: 30px 0;
+    background-color: #cc811945;
+    text-align: center;
+}
+
+.new-head a {
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #cc8119;
+}
+
+.new-main {
+    padding-top: 20px;
+}
+
+.tn-pos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.tn-img {
+    width: 100%;
+    height: 200px;
+}
+
+.tn-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.tn-text {
+    text-align: center;
+}
+
+.tn-text p {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* new arrival part end */
+
+
+/* catone part start */
+
+#cate-one {
+    padding: 20px 0;
+}
+
+.cateone-pos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.cateone-img {
+    width: 100%;
+    height: 350px;
+}
+
+.cateone-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.cateone-text {
+    text-align: center;
+}
+
+.cateone-text p {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-style: normal;
+    padding: 0 3px 3px 3px;
+    width: 250px;
+}
+
+
+/* cateone part end */
+
+
+/* tshirt price part start */
+
+#tshirt-p {
+    padding: 20px 0;
+}
+
+.tp-pos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.tp-img {
+    width: 100%;
+    height: 350px;
+}
+
+.tp-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.tp-text {
+    text-align: center;
+}
+
+.tp-text p {
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-style: normal;
+    padding: 0 3px 3px 3px;
+    width: 250px;
+}
+
+.tsp-pos {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.tsp-img {
+    width: 100%;
+    height: 165px;
+}
+
+.tsp-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.tsp-text {
+    text-align: center;
+}
+
+.tsp-text p {
+    position: absolute;
+    content: '';
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tsp-text s {
+    color: silver;
+}
+
+.view-more a {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+}
+
+
+/* tshirt price end */
+
+
+/* fab-content */
+
+#fabr-content {
+    padding: 50px 0;
+}
+
+.fabr-text {
+    padding: 20px 0;
+}
+
+.fabr-text h1 {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+}
+
+.fabr-text h3 {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.fabr-text span {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: green;
+}
+
+.fabr-text p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: darkgray;
+}
+
+.fabr-img {
+    width: 100%;
+}
+
+.fabr-img img {
+    width: 100%;
+}
+
+
+/* fab-content end */
+
+
+/* jacket price list */
+
+#jacket-p {
+    padding: 20px 0;
+}
+
+.jacketp-pos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.jacketp-img {
+    width: 100%;
+    height: 350px;
+}
+
+.jacketp-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.jacketp-text {
+    text-align: center;
+}
+
+.jacketp-text p {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-style: normal;
+    padding: 0 3px 3px 3px;
+    width: 250px;
+}
+
+.jacketpp-pos {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.jacketpp-img {
+    width: 100%;
+    height: 165px;
+}
+
+.jacketpp-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.jacketpp-text {
+    text-align: center;
+}
+
+.jacketpp-text p {
+    position: absolute;
+    content: '';
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.jacketpp-text s {
+    color: silver;
+}
+
+.view-more a {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+}
+
+
+/* jacket price list end */
+
+
+/* polo part start */
+
+#poloo-one {
+    padding: 20px 0;
+}
+
+.polo-pos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.polo-img {
+    width: 100%;
+    height: 350px;
+}
+
+.polo-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.polo-text {
+    text-align: center;
+}
+
+.polo-text p {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-style: normal;
+    padding: 0 3px 3px 3px;
+    width: 250px;
+}
+
+
+/* polo part end */
+
+
+/* shorts part start */
+
+#shortss {
+    padding: 20px 0;
+}
+
+.shortp-pos {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.shortp-img {
+    width: 100%;
+    height: 165px;
+}
+
+.shortp-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.shortp-text {
+    text-align: center;
+}
+
+.shortp-text p {
+    position: absolute;
+    content: '';
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.shortp-text s {
+    color: silver;
+}
+
+.view-more a {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+}
+
+.men-short a {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+}
+
+
+/* shorts part end */
+
+
+/* trouser part start */
+
+#trousers {
+    padding: 20px 0;
+}
+
+.trouser-pos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.trouser-img {
+    width: 100%;
+    height: 350px;
+}
+
+.trouser-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.trouser-text {
+    text-align: center;
+}
+
+.trouser-text p {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-style: normal;
+    padding: 0 3px 3px 3px;
+    width: 250px;
+}
+
+
+/* trouser part end */
+
+
+/* sport tshirt part start */
+
+#sporttshirt-p {
+    padding: 20px 0;
+}
+
+.sporttshirt-pos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.sporttshirts-img {
+    width: 100%;
+    height: 350px;
+}
+
+.sporttshirts-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.sporttshirts-text {
+    text-align: center;
+}
+
+.sporttshirts-text p {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: white;
+    font-style: normal;
+    padding: 0 3px 3px 3px;
+    width: 250px;
+}
+
+.sporttshirt-pos {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.sporttshirt-img {
+    width: 100%;
+    height: 165px;
+}
+
+.sporttshirt-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.sporttshirt-text {
+    text-align: center;
+}
+
+.sporttshirt-text p {
+    position: absolute;
+    content: '';
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sporttshirt-text s {
+    color: silver;
+}
+
+
+/* sport tshirt part end */
+
+
+/* mask part start */
+
+#mask-p {
+    padding: 20px 0;
+}
+
+.mask-pos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.mask-img {
+    width: 100%;
+    height: 350px;
+}
+
+.mask-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.mask-text {
+    text-align: center;
+}
+
+.mask-text p {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: white;
+    font-style: normal;
+    padding: 0 3px 3px 3px;
+    width: 250px;
+}
+
+.masks-pos {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.masks-img {
+    width: 100%;
+    height: 165px;
+}
+
+.masks-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.masks-text {
+    text-align: center;
+}
+
+.masks-text p {
+    position: absolute;
+    content: '';
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.masks-text s {
+    color: silver;
+}
+
+
+/* mask part end */
+
+
+/* socks part start */
+
+.sock-head {
+    padding: 15px 0;
+    background-color: #ccf7f1;
+    text-align: center;
+}
+
+.sock-head a p {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #009688;
+}
+
+.sock-head a h3 {
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #009688;
+}
+
+.sock-head a span {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #009688;
+}
+
+#socks {
+    padding: 20px 0;
+}
+
+.sock-pos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.sock-img {
+    width: 100%;
+    height: 350px;
+}
+
+.sock-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.sock-text {
+    text-align: center;
+}
+
+.sock-text p {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: white;
+    font-style: normal;
+    padding: 0 3px 3px 3px;
+    width: 250px;
+}
+
+.socks-pos {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.socks-img {
+    width: 100%;
+    height: 165px;
+}
+
+.socks-img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.socks-text {
+    text-align: center;
+}
+
+.socks-text p {
+    position: absolute;
+    content: '';
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    padding: 0 3px 3px 3px;
+    width: 130px;
+    border: 2px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.socks-text s {
+    color: silver;
+}
+
+
+/* socks part end */
+
+
+/* bulk part start */
+
+#bulk {
+    padding: 20px 10px;
+    background-color: #eaeaea;
+}
+
+.bulk-text {
+    padding: 20px 0;
+}
+
+.bulk-text a h2 {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #4a96d3;
+}
+
+.bulk-text a p {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.bulk-text a span {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: green;
+}
+
+.bulk-img {
+    width: 100%;
+    height: 100%;
+}
+
+.bulk-img img {
+    width: 100%;
+    height: 80%;
+    padding: 0 !important;
+}
+
+
+/* bulk part end */
+
+
+/* work part start */
+
+#work {
+    padding: 30px 0;
+}
+
+.work-text h2 {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+
+.work-text h4 {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.work-text p {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.work-text h4 img {
+    width: 20%;
+}
+
+
+/* work part end */
+
+
+/* company part start */
+
+.c-img img {
+    width: 60%;
+}
+
+.c-img {
+    /* height: 300px; */
+    padding: 50px;
+}
+
+#company {
+    position: relative;
+    /* padding-bottom: 50px; */
+    padding: 30px 0;
+}
+
+.prev {
+    position: absolute;
+    top: 188px;
+    left: 55px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.next {
+    position: absolute;
+    top: 188px;
+    right: 45px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.prev:hover {
+    color: red;
+}
+
+.next:hover {
+    color: red;
+}
+
+
+/* company part end */
+
+
+/* join part start */
+
+#join {
+    padding: 20px 0;
+}
+
+.join-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.join-pos {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.join-image img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.join-text {
+    position: absolute;
+    content: '';
+    top: 37px;
+    right: 124px;
+    text-align: end;
+}
+
+.join-text h3 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #545454;
+}
+
+.join-text h1 {
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #2b9c94;
+}
+
+
+/* join part end */
+
+
+/* payment part start */
+
+#payment {
+    padding: 20px 0;
+    background-color: #f3f3f3;
+}
+
+.pay {
+    width: 100%;
+}
+
+.pay img {
+    width: 100%;
+}
+
+.pay h3 {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.pay i {
+    font-size: 25px;
+}
+
+.pay span {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* payment part end */
+
+
+/* subscribe part start */
+
+#subscribe {
+    padding: 40px 0;
+    background-color: #37383f;
+}
+
+.subs h3 {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+.subs h3 i {
+    color: orange;
+}
+
+.btn-sub input {
+    width: 350px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.btn-sub button {
+    padding: 10px 10px;
+    background-color: orange;
+    color: white;
+}
+
+.subs p {
+    color: gray;
+}
+
+
+/* subscribe part end */
+
+
+/* footer part start */
+
+#footer {
+    background-color: #58595b;
+}
+
+.f-one {
+    padding: 20px 0;
+}
+
+.f-one h5 {
+    font-size: 23px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: orange;
+}
+
+.f-one h4 {
+    font-size: 23px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+.f-one p a {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    transition: 0.5s;
+}
+
+.f-one p a:hover {
+    color: orange;
+}
+
+.fabb-text span {
+    color: gray;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fabb-text p {
+    color: black;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* footer part end */
+
+
+/* index page end */
+
+
+/* login page started */
+
+.quicktech-loginfb {
+    background-color: #3b5998;
+    color: white;
+    width: 100%;
+}
+
+.quicktech-loginfb span {
+    padding-right: 5px;
+}
+
+#quicktech-login {
+    padding-bottom: 20px;
+}
+
+.quicktech-form {
+    padding-top: 30px;
+}
+
+
+/* login page ended */
+
+
+/* register page started */
+
+.send-otp {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* register page ended */
+
+
+/* track page start */
+
+.quicktech-trackk {
+    padding-top: 50px;
+}
+
+
+/* track page end */
+
+
+/* men page start */
+
+
+/* The side navigation menu */
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* Sidebar links */
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+
+/* Active/current link */
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* Links on mouse-over */
+
+
+/* .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  } */
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
+div.content {
+    margin-left: 300px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+p,
+label {
+    font-size: 16px;
+}
+
+input {
+    margin: 0.4rem;
+}
+
+.inp a {
+    color: lightblue;
+}
+
+.inp i {
+    color: orange;
+}
+
+.men-inputt {
+    display: flex;
+}
+
+.men-inputt a {
+    padding-top: 5px;
+}
+
+.men-inputt a i {
+    border: transparent;
+    padding: 10px 10px;
+}
+
+.quicktech-tags a {
+    font-size: 14px;
+    color: black;
+    background-color: #e8e8e8;
+    padding: 3px 3px;
+}
+
+.quicktech-tags span a {
+    background-color: #808080;
+    color: #e8e8e8;
+}
+
+.quicktech-tags p a {
+    background-color: #00aeef;
+    color: #e8e8e8;
+}
+
+.quicktech-tags p {
+    padding-top: 5px;
+}
+
+.quicktech-pos {
+    position: relative;
+}
+
+.quicktech-catimg {
+    width: 100%;
+    height: 200px;
+}
+
+.quicktech-sell {
+    position: absolute;
+    content: '';
+    top: 8px;
+    right: 8px;
+}
+
+.quicktech-free p {
+    background-color: black;
+    padding: 2px 20px;
+    color: white;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicktech-free i {
+    color: orange;
+}
+
+.quicktech-free {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 8px;
+}
+
+.quicktech-sell p {
+    background-color: red;
+    padding: 2px 20px;
+}
+
+.quicktech-catimg img {
+    width: 100%;
+}
+
+.quicktech-cattext h4 {
+    font-size: 16px;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+
+/* .quicktech-poductname {} */
+
+.quicktech-cattext a {
+    background-color: black;
+    color: white;
+    cursor: text;
+    padding: 5px;
+}
+
+.quicktech-cattext s {
+    color: red;
+}
+
+.quicktech-cattext h3 {
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+.quicktech-buy {
+    background-color: #0a0a23;
+    color: white;
+    padding: 3px 0;
+}
+
+.quicktech-buy p {
+    padding-top: 6px;
+    font-size: 14px;
+}
+
+.quicktech-cattext p a {
+    padding: 0;
+    cursor: pointer;
+}
+
+.quicktech-menmain:hover {
+    border: 1px solid lightblue;
+    cursor: pointer;
+}
+
+.facet-item {
+    font-size: .85em;
+}
+
+.newarrival {
+    color: #00aeef;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.level2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+}
+
+.usual-checkbox {
+    background-color: red;
+}
+
+.facet-count {
+    color: black;
+    background-color: #e8e8e8;
+    font-size: 12px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1px 6px;
+    margin-right: 20px;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.men-input {
+    z-index: 1111;
+}
+
+
+/* men page end */
+
+
+/* product details part start */
+
+.quicktech-pimg {
+    width: 100%;
+}
+
+.quicktech-pimg img {
+    width: 100%;
+}
+
+.pposition {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.quicktech-salee {
+    position: absolute;
+    content: '';
+    top: 19px;
+    left: 34px;
+}
+
+.quicktech-salee p {
+    background-color: red;
+    color: white;
+    padding: 3px 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.quicktech-pimg img:hover {
+    -webkit-box-shadow: -1px 1px 11px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 11px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 11px 1px rgba(0, 0, 0, 0.75);
+}
+
+.quicktech-frequent {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.quicktech-frequent::after {
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.quicktech-frequent h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.quickteck-fimg {
+    width: 100%;
+}
+
+.quickteck-fimg img {
+    width: 100%;
+}
+
+.quickch-ftext h6 {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quickch-ftext p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.quickch-ftext s {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicktech-fbtnadd button {
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border: none;
+}
+
+.quicktech-ptext h6 {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicktech-ptext p {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.quicktech-ptext s {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.takk2 .minus,
+.takk2 p,
+.takk2 .plus {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 2px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.quicktech-count-main {
+    display: flex;
+    position: relative;
+}
+
+.quicktech-fbtnaddd button {
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border: none;
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+.quicktech-count-main::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.quicktech-prdetails p {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 550px;
+}
+
+.quicktech-specification ul {
+    list-style: inherit;
+    padding-left: 40px;
+}
+
+.quicktech-productchart h4 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dis-f {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.quicktech-share p {
+    color: lightblue;
+}
+
+.quicktech-share ul li i {
+    font-size: 20px;
+    color: black;
+    padding-left: 10px;
+}
+
+
+/* product details part end *
+/* like part start */
+
+.quicktech-lhead h3 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.quicktech-lhead {
+    position: relative;
+}
+
+.quicktech-lhead::after {
+    position: absolute;
+    content: '';
+    bottom: -2;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.quicktech-likeimg {
+    width: 100%;
+}
+
+.quicktech-likeimg img {
+    width: 100%;
+}
+
+.like-pos {
+    width: 100%;
+    position: relative;
+}
+
+.quicktech-likeprice p {
+    position: absolute;
+    content: '';
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quicktech-likeprice p {
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    background-color: white;
+    padding: 0 3px;
+    border-radius: 10px;
+}
+
+.quicktech-fbtnadddd button {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.contact-text {
+    padding-left: 20px;
+}
+
+.contact-off {
+    padding-left: 20px;
+}
+
+.contact-off h4 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+}
+
+
+/* like part end */
